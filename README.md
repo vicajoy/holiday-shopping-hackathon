@@ -1,10 +1,11 @@
-This repository has been designed for `Holiday Shopping Hackathon`.
+This repository has been designed for 
+[Applitools Holiday Shopping Hackathon](https://applitools.com/hackathon-v20-3-instructions).
 
 
 ## Packages
 The project uses the following packages:
 * Selenium WebDriver 3.141.59
-* ChromeDriver 86.0.4240.22
+* ChromeDriver 87.0.4240.22
 * Java JDK 11 or higher
 * Apache Maven 3.6.3
 * TestNG 7.1.0
