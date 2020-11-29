@@ -1,4 +1,5 @@
 import eyes.EyesManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -15,16 +16,12 @@ public abstract class BaseTest {
 
     @BeforeClass(alwaysRun = true)
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
         eyesManager = new EyesManager(driver, "AppliFashion");
         eyesManager.setBatchName("Testing Lifecycle");
     }
 
-    /**
-     * Goes to the main page
-     */
     public void goToMainPage() {
         driver.get(URL);
         mainPage = new MainPage(driver);
