@@ -28,7 +28,7 @@ public class EyesManager {
     /**
      * Sets the name for the batch of tests
      *
-     * @param batchName String - e.g. UFG Hackathon
+     * @param batchName String - e.g. Testing Lifecycle
      */
     public void setBatchName(String batchName) {
         eyes.setBatch(new BatchInfo(batchName));
@@ -37,8 +37,8 @@ public class EyesManager {
     /**
      * Takes screenshot of the entire window and compares with the baseline
      *
-     * @param testName String - name of the test in Applitools, e.g. Task 1
-     * @param stepName String - name of the screenshot, e.g. Search field is not displayed
+     * @param testName String - name of the test in Applitools, e.g. Test 1
+     * @param stepName String - name of the screenshot, e.g. main page
      */
     public void validateWindow(String testName, String stepName) {
         eyes.open(driver, appName, testName);
@@ -50,8 +50,8 @@ public class EyesManager {
     /**
      * Takes screenshot of element by given locator and compares with the baseline
      *
-     * @param testName String - name of the test in Applitools, e.g. Task 1
-     * @param stepName String - name of the screenshot, e.g. Search field is not displayed
+     * @param testName String - name of the test in Applitools, e.g. Test 1
+     * @param stepName String - name of the screenshot, e.g. main page
      * @param locator  By - locator to validate
      */
     public void validateElement(By locator, String testName, String stepName) {

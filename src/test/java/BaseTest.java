@@ -19,7 +19,7 @@ public abstract class BaseTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         eyesManager = new EyesManager(driver, "AppliFashion");
-        eyesManager.setBatchName("Testing Lifecycle");
+        eyesManager.setBatchName("Holiday Shopping");
     }
 
     public void goToMainPage() {
