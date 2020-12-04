@@ -11,7 +11,7 @@ public abstract class BaseTest {
     protected WebDriver driver;
     protected MainPage mainPage;
     protected static EyesManager eyesManager;
-    private final String URL = "https://demo.applitools.com/tlcHackathonMasterV2.html";
+    private final String URL = System.getProperty("url");;
 
 
     @BeforeClass(alwaysRun = true)
