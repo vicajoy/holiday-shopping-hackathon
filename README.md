@@ -13,9 +13,10 @@ The project uses the following languages and frameworks:
 ## Running Tests
 * Applitools API Key has been stored in the system environment variables.
 * To run the tests on the specific version, use the following command:   
-`mvn clean test -Durl="https://demo.applitools.com/tlcHackathonMasterV1.html"`.  
+`mvn clean test -Durl="https://demo.applitools.com/tlcHackathonMasterV2.html"`.  
 Acceptable versions are: [V1 production version](https://demo.applitools.com/tlcHackathonMasterV1.html), 
-[Dev-branch version](https://demo.applitools.com/tlcHackathonDev.html), and [Final production version](https://demo.applitools.com/tlcHackathonMasterV2.html).
+[Dev-branch version](https://demo.applitools.com/tlcHackathonDev.html), and [Final production version](https://demo.applitools.com/tlcHackathonMasterV2.html).  
+By default, the tests will be running on `V1 production version`.
 
 ## Author
 Vica Markosyan

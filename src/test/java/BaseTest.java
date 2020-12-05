@@ -6,12 +6,14 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import pages.MainPage;
 
+import java.util.Objects;
+
 public abstract class BaseTest {
 
     protected WebDriver driver;
     protected MainPage mainPage;
     protected static EyesManager eyesManager;
-    private final String URL = System.getProperty("url");;
+    private final String URL = System.getProperty("url");
 
 
     @BeforeClass(alwaysRun = true)
@@ -23,7 +25,7 @@ public abstract class BaseTest {
     }
 
     public void goToMainPage() {
-        driver.get(URL);
+        driver.get(Objects.requireNonNullElse(URL, "https://demo.applitools.com/tlcHackathonMasterV1.html"));
         mainPage = new MainPage(driver);
     }
 
